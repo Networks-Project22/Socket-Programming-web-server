@@ -2,7 +2,7 @@
 from socket import *  
 
 #Passing an empty string means that the server can listen to incoming connections from other computers as well.
-HOST = '' 
+HOST = "192.168.1.208" 
 PORT = 5050 # Assign a port number
 
 
@@ -54,7 +54,7 @@ while True:
 
         # Because the extracted path of the HTTP request includes 
 		# a character '\', we read the path from the second character 
-        f = open(fileName[1:])
+        f = open(fileName[1:]) 
 
         # Read the file "f" and store the entire content of the requested file in a temporary buffer
         outputdata = f.read()
@@ -77,6 +77,6 @@ while True:
     except KeyboardInterrupt:
         print("Shut down")
     except Exception as ex:
-        print("Error: " + ex)
+        print("Error: ")
 
 print("Access http://localhost:5050")   
