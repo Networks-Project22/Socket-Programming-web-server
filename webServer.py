@@ -2,7 +2,7 @@
 from socket import *  
 
 #Passing an empty string means that the server can listen to incoming connections from other computers as well.
-HOST = "192.168.1.208" 
+HOST = "" 
 PORT = 5050 # Assign a port number
 
 
